@@ -1,19 +1,64 @@
 {
-    "client": {
-        "_events": {},
-        "_eventsCount": 0,
-        "config": {
-            "accessToken": "5WOWFMQQCBBKZPAUXN2ZHCOZMPU7XLUL",
-            "witURL": "https://api.wit.ai",
-            "apiVersion": "20210928",
-            "headers": {
-                "Authorization": "Bearer 5WOWFMQQCBBKZPAUXN2ZHCOZMPU7XLUL",
-                "Content-Type": "application/json"
-            },
-            "logger": {
-                "level": "info"
-            },
-            "proxy": null
+    "text": "Hi my name is shelby and I'd like to make a reservation for three people for tonight at 7pm",
+    "intents": [
+        {
+            "id": "368791191871440",
+            "name": "reservation",
+            "confidence": 0.9998
         }
-    }
+    ],
+    "entities": {
+        "wit$datetime:reservationDateTime": [
+            {
+                "id": "306530908223582",
+                "name": "wit$datetime",
+                "role": "reservationDateTime",
+                "start": 77,
+                "end": 91,
+                "body": "tonight at 7pm",
+                "confidence": 0.8091,
+                "entities": [],
+                "type": "value",
+                "grain": "hour",
+                "value": "2022-04-22T19:00:00.000-07:00",
+                "values": [
+                    {
+                        "type": "value",
+                        "grain": "hour",
+                        "value": "2022-04-22T19:00:00.000-07:00"
+                    }
+                ]
+            }
+        ],
+        "wit$number:numberOfGuests": [
+            {
+                "id": "1139864583333971",
+                "name": "wit$number",
+                "role": "numberOfGuests",
+                "start": 60,
+                "end": 65,
+                "body": "three",
+                "confidence": 0.9995,
+                "entities": [],
+                "type": "value",
+                "value": 3
+            }
+        ],
+        "wit$contact:contact": [
+            {
+                "id": "274753161423749",
+                "name": "wit$contact",
+                "role": "contact",
+                "start": 14,
+                "end": 20,
+                "body": "shelby",
+                "confidence": 0.999,
+                "entities": [],
+                "suggested": true,
+                "value": "shelby",
+                "type": "value"
+            }
+        ]
+    },
+    "traits": {}
 }
