@@ -1,0 +1,19 @@
+{
+    "client": {
+        "_events": {},
+        "_eventsCount": 0,
+        "config": {
+            "accessToken": "5WOWFMQQCBBKZPAUXN2ZHCOZMPU7XLUL",
+            "witURL": "https://api.wit.ai",
+            "apiVersion": "20210928",
+            "headers": {
+                "Authorization": "Bearer 5WOWFMQQCBBKZPAUXN2ZHCOZMPU7XLUL",
+                "Content-Type": "application/json"
+            },
+            "logger": {
+                "level": "info"
+            },
+            "proxy": null
+        }
+    }
+}
